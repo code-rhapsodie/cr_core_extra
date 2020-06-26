@@ -1,0 +1,3 @@
+#cr_core_extra_homepage:
+#    path:     /
+#    defaults: { _controller: CrCoreExtraBundle:Default:index }

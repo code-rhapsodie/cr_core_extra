@@ -1,0 +1,29 @@
+{
+  "name": "code-rhapsodie/cr-core-extra",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jean-Baptiste Nahan",
+      "email": "jean-baptiste@code-rhapsodie.fr",
+      "role": "Developer"
+    },
+    {
+      "name": "Code Rhapsodie",
+      "homepage": "https://www.code-rhapsodie.fr/"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CodeRhapsodie\\CrCoreExtraBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CodeRhapsodie\\CrCoreExtraBundle\\Tests\\": "Tests/"
+    }
+  },
+  "require": {
+    "php": "^7.3",
+    "ezsystems/ezpublish-kernel": "^7.0"
+  }
+}

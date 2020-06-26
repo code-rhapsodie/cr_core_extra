@@ -1,0 +1,20 @@
+services:
+  _defaults:
+    public: false
+    autoconfigure: true
+    autowire: true
+
+  CodeRhapsodie\CrCoreExtraBundle\:
+    resource: '../../*'
+    exclude: '../../{Entity,Resources,Tests}'
+
+  CodeRhapsodie\CrCoreExtraBundle\Command\CheckEzFileCommand:
+    arguments:
+      $connection: '@ezpublish.persistence.connection'
+
+  CodeRhapsodie\CrCoreExtraBundle\Checker\FileInFileSystemChecker:
+    arguments:
+      $binarydataHandler: '@ezpublish.core.io.binarydata_handler'
+#      $IOService: '@ezpublish.core.io.service'
+      $prefix: '$io.url_prefix$'
+      $projectDir: '%kernel.project_dir%'
