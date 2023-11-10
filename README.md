@@ -1,6 +1,6 @@
 # eZ Platform core extra
 
-> Disclaimer: this bundle is experimental.
+> Disclaimer: this bundle is experimental and not maintained anymore.
 
 ## Command
 
